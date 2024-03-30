@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
 interface WorkProps {
-    key: string;
+    key: number;
     Title: string;
     Sub: string;
+    Img: string;
 }
 
-const Workcard: React.FC<WorkProps> = ({Title, Sub}) => {
+const Workcard: React.FC<WorkProps> = ({Title, Sub, Img, key}) => {
     return (
         <>
             <div className="rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors  focus-within:bg-neutral-300 hover:bg-neutral-300 ">
@@ -24,7 +25,7 @@ const Workcard: React.FC<WorkProps> = ({Title, Sub}) => {
                     <div className="d"> </div>
                 </div>
                 <div>
-                <img src="https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png" alt="IHH Player"/>
+                <img src={Img} alt="IHH Player"/>
             </div>
             </div>
         </>
