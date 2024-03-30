@@ -13,8 +13,9 @@ export default function Work() {
     />
     </div>
     <Workcard
-    Title="HEY"
-    Subtitle="THEY ARE HERE"
+    key="901"
+    Title="IHH Player"
+    Sub="THEY ARE HERE"
     />
     </>
     </>

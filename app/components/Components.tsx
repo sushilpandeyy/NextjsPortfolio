@@ -1,12 +1,24 @@
 import { Minimenu } from "./Propcomp"
+import { Tweet } from "react-tweet";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Varansi from "../../assets/Varansi.jpg"
 import Folder from "../../assets/Folder.jpeg"
 
+function Twitter2(){
+ return (
+  <>
+  <blockquote className="twitter-tweet">
+    <p lang="en" dir="ltr">Just dove 🕊️ into TypeScript!</p>&mdash; Sushil Pandey (@contactsushill) <a href="https://twitter.com/contactsushill/status/1767909553478537439?ref_src=twsrc%5Etfw">March 13, 2024</a>
+    </blockquote> 
+    <script async src="https://platform.twitter.com/widgets.js" ></script>
+  </>
+ )
+}
+
 function Twitter() {
     return (
-      <div className="twitterbox rounded-md border border-zinc-50 p-4 m-2 bg-neutral-50 w-auto sm:w-auto">
+      <div className="twitterbox rounded-md border border-zinc-50 p-4 m-2 bg-neutral-200 w-auto sm:w-auto">
         <div className="content tweet flex flex-col lg:flex-row lg:items-center justify-between">
         <div className="flex items-center justify-between mb-2 lg:mb-0">
   <div className="flex items-center">
@@ -47,13 +59,6 @@ function Twitter() {
   }
   
 
-function Resume() {
-  return (
-    <div className="imgbox group m-2 p-4 h-full w-1/2 overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 flex-col">
-      <img className="w-auto" src="https://photos5.appleinsider.com/gallery/49598-97114-Files-app-xl.jpg" alt="" />
-    </div>
-  );
-}
 
 function Description(){
     return (
@@ -70,7 +75,7 @@ function Gallery() {
     const [hovered, setHovered] = useState<boolean>(false);
       
     return (
-        <div className="relative bg-gray-200 group h-auto w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
+        <div className="relative group h-auto w-full overflow-hidden rounded-lg bg-neutral-100 transition-colors focus-within:bg-neutral-300 hover:bg-neutral-300">
             <div className="relative h-5/6" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
                 <div className={`absolute top-0 left-0 w-full transition-opacity duration-500 ${hovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <Minimenu 
@@ -89,7 +94,7 @@ function Gallery() {
 
 function IhhComp() {
     return (
-        <div className="group w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 flex-col">
+        <div className="group w-full overflow-hidden rounded-lg bg-neutral-100 transition-colors focus-within:bg-neutral-300 hover:bg-neutral-300 flex-col">
             <Minimenu 
                 key="IHHPLAy"
                 Title="Projects"
@@ -97,7 +102,7 @@ function IhhComp() {
                 Pro="https://ihh-player.vercel.app"
                 Side="IHH Player"
             />
-            <div className="boxdlee grow overflow-hidden transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 ">
+            <div className="boxdlee grow overflow-hidden transition-colors focus-within:bg-neutral-300 hover:bg-neutral-300 ">
                 <img className="imageihh" src="https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png" alt="IHH Player"/>
             </div>
         </div>
@@ -108,7 +113,7 @@ function FasciaComp() {
     const [hovered, setHovered] = useState<boolean>(false);
      
     return (
-        <div className="group h-80 w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
+        <div className="group h-80 w-full overflow-hidden rounded-lg bg-neutral-100 transition-colors focus-within:bg-neutral-300 hover:bg-neutral-300 " onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
             <Minimenu 
                 key="FASCIA"
                 Title="Projects"
@@ -124,4 +129,4 @@ function FasciaComp() {
 }
 
 
-export {Twitter, Resume, Gallery, Description, IhhComp, FasciaComp}
+export {Twitter, Twitter2, Gallery, Description, IhhComp, FasciaComp}

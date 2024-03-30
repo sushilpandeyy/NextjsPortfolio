@@ -1,4 +1,4 @@
-import { Resume, Twitter } from "./Components";
+import { Twitter, Twitter2 } from "./Components";
 import { Minimenu } from "./Propcomp"
 import Image from 'next/image';
 import { Description, IhhComp } from "./Components";
@@ -13,9 +13,8 @@ export default function About(){
     </div>
     <div className="s2 lg:w-1/2">
     <IhhComp/>
-    <div className="sm:block lg:flex content-start justify-between">
-    <Resume/>
-    <Twitter/>
+    <div className="sm:block lg:flex content-start justify-center">
+    <Twitter2/>
     </div>
     </div>
     </div>

@@ -23,6 +23,7 @@ const Minimenu: React.FC<MinimenuProps> = ({ Title, URL, Side, Pro }) => {
     );
 };
 
+
 interface BlogProps {
     key: string;
     Title: string;
@@ -34,7 +35,7 @@ interface BlogProps {
 const Blogcard: React.FC<BlogProps> = ({Title, URL, Description, Date}) => {
     return (
         <>
-        <div className="rounded-md p-3 h-full rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 ">
+        <div className="rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors  focus-within:bg-neutral-300 hover:bg-neutral-300 ">
         <Minimenu 
                 key="FASCIA"
                 Title="Projects"
@@ -53,4 +54,4 @@ const Blogcard: React.FC<BlogProps> = ({Title, URL, Description, Date}) => {
 }
 
 
-export { Minimenu, Blogcard };
+export { Minimenu, Blogcard};
