@@ -123,5 +123,41 @@ const Sidebar: React.FC<Workobj> = ({role, team, stack, time}) => {
     )
 }
 
+interface btnobj {
+    title: string,
+    link: string,
+}
 
-export { Minimenu, Blogcard, Headline, Sidebar};
+interface workheadobj {
+    id: string;
+    Description: string;
+    Context: string;
+    Buttons: btnobj[];
+}
+
+function spitbtn(item:btnobj){
+    return (
+        <Link href={item.link}>
+        <button className="text-base bg-white text-gray-800 px-8 py-3 rounded-full border border-gray-200 hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300 transition duration-300 shadow-md">
+         {item.title}
+        </button>
+    </Link>
+    )
+}
+
+const Headbod: React.FC<workheadobj> = ({Description, Context, Buttons}) => {
+    return (
+        <>
+        <h3 className='text-lg text-neutral-500'>DESCRIPTION</h3>
+        <article className='text-black'>{Description}</article>
+        <h3 className='text-lg text-neutral-500'>CONTEXT</h3>
+        <article className='text-black'>{Context}</article>
+        <div className="flex content-start justify-center ">
+            {Buttons.map(spitbtn)}
+        </div>
+        </>
+    )
+}
+
+export { Minimenu, Blogcard, Headline, Sidebar, Headbod};
+

@@ -1,8 +1,8 @@
 'use client'
 
 import { usePathname } from 'next/navigation';
-import { Headline, Sidebar } from '@/app/components/Propcomp';
-import { Workdata } from '@/data/info';
+import { Headline, Sidebar, Headbod } from '@/app/components/Propcomp';
+import { Workdata, Headdata } from '@/data/info';
 import Menuhead from '@/app/components/Menuhead';
 
 interface MyRole {
@@ -28,6 +28,22 @@ function filterData(items: Workobj[], workid: string): Workobj | null {
     return items.find(item => item.id === workid) || null;
 }
 
+interface btnobj {
+    title: string,
+    link: string,
+}
+
+interface workheadobj {
+    id: string;
+    Description: string;
+    Context: string;
+    Buttons: btnobj[];
+}
+
+function FFilterbio(items: workheadobj[], workid: string): workheadobj | null {
+    return items.find(item => item.id === workid) || null;
+}
+
 const DynamicPage = () => {
     const pathname = usePathname();
     
@@ -41,6 +57,7 @@ const DynamicPage = () => {
     
     const workid = getIdFromPath(pathname);
     const filteredWork:any = filterData(Workdata, workid);
+    const filterbio:any = FFilterbio(Headdata, workid);
 
     return (
         <>
@@ -71,7 +88,12 @@ const DynamicPage = () => {
                     />
                 </div>
                 <div className="w-2/3">
-                    2/3
+                <Headbod
+                    id={filterbio.id}
+                    Description={filterbio.Description}
+                    Context={filterbio.Context}
+                    Buttons={filterbio.Buttons}
+                />
                 </div>
             </div>
             </div>
