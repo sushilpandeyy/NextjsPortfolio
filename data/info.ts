@@ -6,7 +6,6 @@ interface MyObject {
     sub: string;
     img: string;
 }
-
 const projects: MyObject[] = [
     {
         id: "skoop",
@@ -508,5 +507,147 @@ link: "https://www.linkedin.com/in/anand-kumar-sharma-7304b1254/"
     },
 ] 
 
+interface btnobj {
+    title: string,
+    link: string,
+}
 
-export {projects, Workdata}
+interface workheadobj {
+    id: string;
+    Description: string;
+    Context: string;
+    Buttons: btnobj[];
+}
+
+const Headdata: workheadobj[] = [
+    {
+        id: "skoop",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Github",
+                link: "https://github.com/sushilpandeyy/skoop"
+            },
+            {
+                title: "Website",
+                link: "https://skoop1.vercel.app/"
+            },
+        ],
+    },
+    {
+        id: "borrowbridge",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Github",
+                link: "https://github.com/MaheepTulsian/BorrowBridge2.0"
+            },
+        ],
+    },
+    {
+        id: "myraa",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Website",
+                link: "https://www.myraatechnologies.com/"
+            },
+        ],
+    },
+    {
+        id: "ihh",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Github",
+                link: "https://github.com/sushilpandeyy/IHHPlayer"
+            },
+            {
+                title: "Website",
+                link: "https://ihh.contactsushil.me/"
+            },
+        ],
+    },
+    {
+        id: "fascia",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Github",
+                link: "https://github.com/sushilpandeyy/Fascia"
+            },
+            {
+                title: "Website",
+                link: "https://fascia-nu.vercel.app/"
+            },
+        ],
+    },
+    {
+        id: "disstract",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Github",
+                link: "https://github.com/sushilpandeyy/HackSRM4.0"
+            },
+            {
+                title: "Devfolio",
+                link: "https://devfolio.co/projects/disstract-d051"
+            },
+        ],
+    },
+    {
+        id: "everydukan",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Playstore",
+                link: "https://play.google.com/store/apps/details?id=com.dukan.every"
+            },
+            
+        ],
+    },
+    {
+        id: "vpn",
+        Description: "string",
+        Context: "string",
+        Buttons: [],
+    },
+    {
+        id: "wejobstation",
+        Description: "string",
+        Context: "string",
+        Buttons: [],
+    },
+    {
+        id: "freelancing",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Email Me",
+                link: "https://mailto:contact.sushilpandey@gmail.com"
+            }
+        ],
+    },
+    {
+        id: "pni",
+        Description: "string",
+        Context: "string",
+        Buttons: [
+            {
+                title: "Website",
+                link: "https://www.prakashnewsofindia.in/"
+            }
+        ],
+    },
+]
+
+export {projects, Workdata, Headdata}
