@@ -4,7 +4,7 @@ import Workcard from "../components/Workcard"
 import { projects } from "@/data/info";
 
 interface MyObject {
-  id: number;
+  id: string;
   name: string;
   sub: string;
   img: string;
@@ -13,7 +13,7 @@ interface MyObject {
 function spit(data:MyObject){
 return (
   <Workcard
-    key={data.id}
+    id={data.id}
     Title={data.name}
     Sub={data.sub}
     Img={data.img}

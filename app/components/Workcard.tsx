@@ -1,15 +1,16 @@
 import Link from 'next/link';
 
 interface WorkProps {
-    key: number;
+    id: string;
     Title: string;
     Sub: string;
     Img: string;
 }
 
-const Workcard: React.FC<WorkProps> = ({Title, Sub, Img, key}) => {
+const Workcard: React.FC<WorkProps> = ({Title, Sub, Img, id}) => {
     return (
         <>
+        <Link href={"/Work/"+id}>
             <div className="rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors  focus-within:bg-neutral-300 hover:bg-neutral-300 ">
                 <div className="flex justify-between content-between">
                     <div className="s">
@@ -17,7 +18,7 @@ const Workcard: React.FC<WorkProps> = ({Title, Sub, Img, key}) => {
                         <h3 className="text-neutral-500 text-base">{Sub}</h3>
                     </div>
                     <div>
-                    <Link href={""}><img src="https://uploads-ssl.webflow.com/62c89bdb7c26b515f632de67/62ca186ae691b25b1768cbfe_arrow-angle.svg" alt="" /></Link>
+                    <img src="https://uploads-ssl.webflow.com/62c89bdb7c26b515f632de67/62ca186ae691b25b1768cbfe_arrow-angle.svg" alt="" />
                 </div>
                 </div>
                 <div className="divide-y divide-neutral-400 pb-10">
@@ -28,6 +29,7 @@ const Workcard: React.FC<WorkProps> = ({Title, Sub, Img, key}) => {
                 <img src={Img} alt="IHH Player"/>
             </div>
             </div>
+            </Link>
         </>
     );
 };
