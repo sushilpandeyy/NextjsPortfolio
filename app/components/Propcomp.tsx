@@ -53,5 +53,41 @@ const Blogcard: React.FC<BlogProps> = ({Title, URL, Description, Date}) => {
     )
 }
 
+interface myrole {
+    item: string
+}
+interface member {
+    name: string,
+    link: string,
+}
 
-export { Minimenu, Blogcard};
+interface Workobj {
+    id: string;
+    name: string;
+    sub: string;
+    role: myrole[];
+    team: member[];
+    stack: myrole[];
+    time: string;
+}
+
+interface Headlineobj {
+    id: string;
+    name: string;
+    sub: string;
+}
+
+const Headline: React.FC<Headlineobj> = ({id, name, sub}) => {
+    return (
+        <>
+        <h1 className='text-3xl'>{name}</h1>
+        <h2 className='text-lg text-neutral-500'>{sub}</h2>
+        <div className="divide-y divide-neutral-400 pb-10">
+                    <div className="d"> </div>
+                    <div className="d"> </div>
+        </div>
+        </>
+    )
+}
+
+export { Minimenu, Blogcard, Headline};
