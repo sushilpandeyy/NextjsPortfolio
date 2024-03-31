@@ -1,8 +1,8 @@
 'use client'
 
 import { usePathname } from 'next/navigation';
-import { Headline, Sidebar, Headbod } from '@/app/components/Propcomp';
-import { Workdata, Headdata } from '@/data/info';
+import { Headline, Sidebar, Headbod} from '@/app/components/Propcomp';
+import { Workdata, Headdata, Workbody} from '@/data/info';
 import Menuhead from '@/app/components/Menuhead';
 
 interface MyRole {
@@ -44,6 +44,15 @@ function FFilterbio(items: workheadobj[], workid: string): workheadobj | null {
     return items.find(item => item.id === workid) || null;
 }
 
+interface workbodybj{
+    id: string;
+    img: string;
+}
+
+function filterwb(items: workbodybj[], workid: string): workbodybj | null {
+    return items.find(item => item.id === workid) || null;
+}
+
 const DynamicPage = () => {
     const pathname = usePathname();
     
@@ -58,7 +67,7 @@ const DynamicPage = () => {
     const workid = getIdFromPath(pathname);
     const filteredWork:any = filterData(Workdata, workid);
     const filterbio:any = FFilterbio(Headdata, workid);
-
+    const filterbody:any = filterwb(Workbody, workid);
     return (
         <>
         {filteredWork ? (
@@ -69,13 +78,13 @@ const DynamicPage = () => {
               Title="Work"
               />
             </div>
-            <div className="m-20 mt-2 rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors ">
+            <div className="m-20 mt-2 mb-5 rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors">
              <Headline
              id={filteredWork.id}
              name={filteredWork.name}
              sub={filteredWork.sub}
                />
-            <div className="flex content-start justify-start">
+            <div className="md:flex grid content-start justify-start">
                 <div className="w-1/3">
                   <Sidebar
                         id={filteredWork.id}
@@ -96,6 +105,9 @@ const DynamicPage = () => {
                 />
                 </div>
             </div>
+            </div>
+            <div className="ml-20 mr-20 rounded-md p-3 ">
+            <img src={filterbody.img} className='rounded-md' alt="" />
             </div>
             </>
         ) : (

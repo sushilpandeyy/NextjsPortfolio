@@ -148,11 +148,11 @@ function spitbtn(item:btnobj){
 const Headbod: React.FC<workheadobj> = ({Description, Context, Buttons}) => {
     return (
         <>
-        <h3 className='text-lg text-neutral-500'>DESCRIPTION</h3>
-        <article className='text-black'>{Description}</article>
-        <h3 className='text-lg text-neutral-500'>CONTEXT</h3>
-        <article className='text-black'>{Context}</article>
-        <div className="flex content-start justify-center ">
+        <h3 className='text-lg text-neutral-500 mb-2'>DESCRIPTION</h3>
+        <article className='text-black  mb-10'>{Description}</article>
+        <h3 className='text-lg text-neutral-500 mb-2'>CONTEXT</h3>
+        <article className='text-black mb-10'>{Context}</article>
+        <div className="flex content-start justify-center">
             {Buttons.map(spitbtn)}
         </div>
         </>

@@ -1,4 +1,3 @@
-import { Url } from "url";
 
 interface MyObject {
     id: string;
@@ -154,21 +153,25 @@ const Workdata: Workobj[] = [
         },
     ],
         team: [
+     {
+         name: "Maheep Tulsiyan",
+         link: "https://www.linkedin.com/in/maheep-tulsyan-972212245/",
+     },
+     {
+         name: "Satyam Kumar",
+         link: "https://www.linkedin.com/in/satyam-kumar-7361661b3/",
+     },
     {
         name: "Sushil Pandey",
         link: "https://www.linkedin.com/in/contactsushil/",
     },
     {
-        name: "Sachin Kumar",
-        link: "https://www.linkedin.com/in/sachin-kumar-351b59203/",
+        name: "Satyendra Singh",
+        link: "https://www.linkedin.com/in/satyendra-singh-70004b254/"
     },
     {
-        name: "BJ Gridhar",
-        link: "https://www.linkedin.com/in/bj-gridhar-945419259/",
-    },
-    {
-        name: "Anand Kumar Sharma",
-        link: "https://www.linkedin.com/in/anand-kumar-sharma-7304b1254/"
+        name: "Avinash Yadav",
+        link: "https://www.linkedin.com/in/avinash-yadav-16hgnisgar/"
     },
     ],
         stack: [
@@ -537,8 +540,9 @@ const Headdata: workheadobj[] = [
     },
     {
         id: "borrowbridge",
-        Description: "string",
-        Context: "string",
+        Description: "A Micro-Investment Platform for Tier-1 City Audience to invest in tier-3 cities.",
+        Context: 
+        "This project was conceived during the hackathon DeFy'24, hosted by VIT Chennai. Our platform introduces an innovative solution for small businesses or individuals seeking financial assistance for equipment procurement. It operates on the principle of raising funds through investment. As beneficiaries begin to generate income, they commit to repaying the invested amount with interest. This unique model not only benefits borrowers but also provides an attractive opportunity for investors seeking potential returns",
         Buttons: [
             {
                 title: "Github",
@@ -650,4 +654,56 @@ const Headdata: workheadobj[] = [
     },
 ]
 
-export {projects, Workdata, Headdata}
+interface workbodybj{
+    id: string;
+    img: string;
+}
+
+const Workbody: workbodybj[] = [
+    {
+        id: "skoop",
+        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710962200/zng2ogv0tnab6mnoqtit.png"
+    },
+    {
+        id: "borrowbridge",
+        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1711783344/uz4locjrgbyq6ztpkfcc.jpg"
+    },
+    {
+        id: "ihh",
+        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png"
+    },
+    {
+        id: "myraa",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711889398/y3kfkssreqfflen219wy.png"
+    },
+    {
+        id: "fascia",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1707815762/uzovvq9as9o2zesm4vzq.jpg"
+    },
+    {
+        id: "disstract",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711809480/mtciojkuqru8ua9rjpki.jpg"
+    },
+    {
+        id: "everydukan",
+        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1711781604/hyg4tdpt19q4nvbggfvg.jpg"
+    },
+    {
+        id: "vpn",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711783998/k5jbtngqp1irseebsozq.png"
+    },
+    {
+        id: "wejobstation",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711781868/zxvywrgwxjdn0f9tvbn4.jpg"
+    },
+    {
+        id: "freelancing",
+        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1711781602/fzlgpuq0wrhksmxpbt5q.jpg"
+    },
+    {
+        id: "pni",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711781854/kzcyeg0vdogjhuflcunl.jpg"
+    },
+]
+
+export {projects, Workdata, Headdata, Workbody}
