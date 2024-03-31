@@ -31,7 +31,7 @@ export default function Work() {
     Title="Work"
     />
     </div>
-    <div className="grid md:m-8 md:grid-cols-3 gap- m-4">
+    <div className="grid md:m-8 md:grid-cols-3 gap-4 m-4">
     {projects.map(spit)}
     </div>
     </>
