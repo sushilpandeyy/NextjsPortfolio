@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation';
-import { Headline } from '@/app/components/Propcomp';
+import { Headline, Sidebar } from '@/app/components/Propcomp';
 import { Workdata } from '@/data/info';
 import Menuhead from '@/app/components/Menuhead';
 
@@ -40,7 +40,7 @@ const DynamicPage = () => {
     }
     
     const workid = getIdFromPath(pathname);
-    const filteredWork = filterData(Workdata, workid);
+    const filteredWork:any = filterData(Workdata, workid);
 
     return (
         <>
@@ -52,12 +52,28 @@ const DynamicPage = () => {
               Title="Work"
               />
             </div>
-            <div className="m-20 rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors  focus-within:bg-neutral-300 hover:bg-neutral-300 ">
+            <div className="m-20 mt-2 rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors ">
              <Headline
              id={filteredWork.id}
              name={filteredWork.name}
              sub={filteredWork.sub}
                />
+            <div className="flex content-start justify-start">
+                <div className="w-1/3">
+                  <Sidebar
+                        id={filteredWork.id}
+                        name={filteredWork.name}
+                        sub={filteredWork.sub}
+                        role={filteredWork.role}
+                        team={filteredWork.team}
+                        stack={filteredWork.stack}
+                        time={filteredWork.time}
+                    />
+                </div>
+                <div className="w-2/3">
+                    2/3
+                </div>
+            </div>
             </div>
             </>
         ) : (

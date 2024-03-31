@@ -150,10 +150,7 @@ const Workdata: Workobj[] = [
             item: "Ideation"
         },
     ],
-        team: [{
-            name: "Sachin Kumar",
-            link: "https://www.linkedin.com/in/sachin-kumar-351b59203/",
-        },
+        team: [
     {
         name: "Sachin Kumar",
         link: "https://www.linkedin.com/in/sachin-kumar-351b59203/",

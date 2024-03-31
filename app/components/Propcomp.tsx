@@ -90,4 +90,38 @@ const Headline: React.FC<Headlineobj> = ({id, name, sub}) => {
     )
 }
 
-export { Minimenu, Blogcard, Headline};
+function spitli(item:myrole){
+    return (
+        <li className='text-sm'>
+            {item.item}
+        </li>
+    )
+}
+
+function spitlii(item:member){
+    return (
+        <li className='text-sm'>
+            <Link href={item.link}>{item.name}</Link>
+        </li>
+    )
+}
+
+const Sidebar: React.FC<Workobj> = ({role, team, stack, time}) => {
+    return (
+        <>
+        <h3 className='text-lg text-neutral-500'>MY ROLE</h3>
+        <ul>{role.map(spitli)}</ul>
+        <h3 className='text-lg mt-4 text-neutral-500'>TEAM</h3>
+        <ul>{team.map(spitlii)}</ul>
+        <h3 className='text-lg mt-4 text-neutral-500'>TOOLS</h3>
+        <ul>{stack.map(spitli)}</ul>
+        <h3 className='text-lg	mt-4 text-neutral-500'>TIMELINE</h3>
+        <ul>
+            <li className='text-sm'>{time}</li>
+        </ul>
+        </>
+    )
+}
+
+
+export { Minimenu, Blogcard, Headline, Sidebar};
