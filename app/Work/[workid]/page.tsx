@@ -78,14 +78,14 @@ const DynamicPage = () => {
               Title="Work"
               />
             </div>
-            <div className="m-20 mt-2 mb-5 rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors">
+            <div className="md:m-10 m-5 mt-2 mb-5 rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors">
              <Headline
              id={filteredWork.id}
              name={filteredWork.name}
              sub={filteredWork.sub}
                />
-            <div className="md:flex grid content-start justify-start">
-                <div className="w-1/3">
+            <div className="md:flex grid md:content-start md:justify-start">
+                <div className="md:w-1/3 order-2 md:order-1">
                   <Sidebar
                         id={filteredWork.id}
                         name={filteredWork.name}
@@ -96,7 +96,7 @@ const DynamicPage = () => {
                         time={filteredWork.time}
                     />
                 </div>
-                <div className="w-2/3">
+                <div className="md:w-2/3 order-1 md:order-2">
                 <Headbod
                     id={filterbio.id}
                     Description={filterbio.Description}
