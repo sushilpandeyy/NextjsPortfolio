@@ -23,10 +23,11 @@ const Menuitems: React.FC<MenuProps> = ({ Title }) => {
         if(item==Title){
         return (
             <>
+            <Link href={"/"+item}>
             <div className="menuopt">
                 <center><p className="smit">{item}</p></center>
             </div>
-            
+            </Link>
             </>
         )
         }

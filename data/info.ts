@@ -30,7 +30,7 @@ const projects: MyObject[] = [
         id: "myraa",
         name: "Myraa Technologies",
         sub: "Full Stack Development Intern",
-        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png"
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711889398/y3kfkssreqfflen219wy.png"
     },
     {
         id: "fascia",
@@ -107,6 +107,10 @@ const Workdata: Workobj[] = [
     },
 ],
     team: [
+        {
+            name: "Sushil Pandey",
+            link: "https://www.linkedin.com/in/contactsushil/",
+        },
 {
     name: "Sachin Kumar",
     link: "https://www.linkedin.com/in/sachin-kumar-351b59203/",
@@ -152,6 +156,10 @@ const Workdata: Workobj[] = [
     ],
         team: [
     {
+        name: "Sushil Pandey",
+        link: "https://www.linkedin.com/in/contactsushil/",
+    },
+    {
         name: "Sachin Kumar",
         link: "https://www.linkedin.com/in/sachin-kumar-351b59203/",
     },
@@ -191,7 +199,11 @@ const Workdata: Workobj[] = [
             item: "Full Stack Developer"
         },
     ],
-    team: [],
+    team: [
+        {
+            name: "Sushil Pandey",
+            link: "https://www.linkedin.com/in/contactsushil/",
+        },],
     stack: [
             {
                 item: "HTML"
@@ -228,7 +240,11 @@ const Workdata: Workobj[] = [
             item: "Ideation"
         }
     ],
-    team: [],
+    team: [
+        {
+            name: "Sushil Pandey",
+            link: "https://www.linkedin.com/in/contactsushil/",
+        },],
     stack: [
             {
                 item: "React"
@@ -259,7 +275,11 @@ const Workdata: Workobj[] = [
             item: "Full Stack Development"
         },
     ],
-    team: [],
+    team: [
+        {
+            name: "Sushil Pandey",
+            link: "https://www.linkedin.com/in/contactsushil/",
+        },],
     stack: [
             {
                 item: "React"
@@ -293,7 +313,22 @@ const Workdata: Workobj[] = [
             item: "Development"
         }
     ],
-    team: [],
+    team: [{
+        name: "Sushil Pandey",
+        link: "https://www.linkedin.com/in/contactsushil/",
+    },
+{
+name: "Sachin Kumar",
+link: "https://www.linkedin.com/in/sachin-kumar-351b59203/",
+},
+{
+name: "Sahil Sharma",
+link: "https://www.linkedin.com/in/sahil-sharma-a735b4247/",
+},
+{
+name: "Anand Kumar Sharma",
+link: "https://www.linkedin.com/in/anand-kumar-sharma-7304b1254/"
+},],
     stack: [
             {
                 item: "HTML"
@@ -321,7 +356,10 @@ const Workdata: Workobj[] = [
             item: "Operations"
         }
     ],
-    team: [],
+    team: [{
+        name: "Sushil Pandey",
+        link: "https://www.linkedin.com/in/contactsushil/",
+    },],
     stack: [
             {
                 item: "Kodular"
@@ -343,7 +381,10 @@ const Workdata: Workobj[] = [
             item: "Operations"
         }
     ],
-    team: [],
+    team: [{
+        name: "Sushil Pandey",
+        link: "https://www.linkedin.com/in/contactsushil/",
+    },],
     stack: [
             {
                 item: "Kotlin Development"
@@ -367,7 +408,10 @@ const Workdata: Workobj[] = [
         },
         
     ],
-    team: [],
+    team: [{
+        name: "Sushil Pandey",
+        link: "https://www.linkedin.com/in/contactsushil/",
+    },],
     stack: [
             {
                 item: "Wordpress"
@@ -406,7 +450,10 @@ const Workdata: Workobj[] = [
         },
         
     ],
-    team: [],
+    team: [{
+        name: "Sushil Pandey",
+        link: "https://www.linkedin.com/in/contactsushil/",
+    },],
     stack: [
         {
             item: "MERN Applications"
@@ -445,7 +492,10 @@ const Workdata: Workobj[] = [
         },
         
     ],
-    team: [],
+    team: [{
+        name: "Sushil Pandey",
+        link: "https://www.linkedin.com/in/contactsushil/",
+    },],
     stack: [
             {
                 item: "Blogger"
