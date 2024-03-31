@@ -106,8 +106,8 @@ const DynamicPage = () => {
                 </div>
             </div>
             </div>
-            <div className="ml-20 mr-20 rounded-md p-3 ">
-            <img src={filterbody.img} className='rounded-md' alt="" />
+            <div className="ml-20 mr-20 rounded-md p-3 w-auto h-auto">
+            <img src={filterbody.img} className='rounded-md w-auto h-auto' alt="" />
             </div>
             </>
         ) : (
