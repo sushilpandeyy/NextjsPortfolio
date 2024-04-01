@@ -525,8 +525,8 @@ interface workheadobj {
 const Headdata: workheadobj[] = [
     {
         id: "skoop",
-        Description: "string",
-        Context: "string",
+        Description: "A decentralized news application incorporating a layer of ML model.",
+        Context: "We developed a platform for independent journalists to practice journalism without relying on any organized body. Recognizing the various influences on these organizations, which can lead to bias, we aimed to build a decentralized platform. However, this presented a new challenge of fake news, which we addressed by creating an ML model. This model instantly evaluates the likelihood of news being fake and flags it with a corresponding rating.",
         Buttons: [
             {
                 title: "Github",
@@ -563,8 +563,8 @@ const Headdata: workheadobj[] = [
     },
     {
         id: "ihh",
-        Description: "string",
-        Context: "string",
+        Description: "IHH Player is an audio streaming app that focuses on Indian Hip-Hop.",
+        Context: "I built the IHH Player to listen to the music I want without Spotify ads. Its frontend was developed using ReactJS deployed on Vercel, while the backend server was built with Express deployed on an AWS EC2 instance, along with an S3 bucket for hosting audio files. For the database, I'm using PostgreSQL hosted on the free tier of Neon.tech. There are multiple features in the pipeline, which I plan to deploy soon.",
         Buttons: [
             {
                 title: "Github",
