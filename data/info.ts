@@ -425,7 +425,7 @@ link: "https://www.linkedin.com/in/anand-kumar-sharma-7304b1254/"
                 item: "SEO"
             },
         ],
-        time: "Mar 2020 - Dec 2023"
+        time: "Dec 2020 - Dec 2023"
     },
     {
         id: "freelancing",
@@ -479,7 +479,7 @@ link: "https://www.linkedin.com/in/anand-kumar-sharma-7304b1254/"
                 item: "SEO"
             },
         ],
-        time: "Mar 2020 - Present"
+        time: "Mar 2019 - Present"
     },
     {
         id: "pni",
@@ -506,7 +506,7 @@ link: "https://www.linkedin.com/in/anand-kumar-sharma-7304b1254/"
                 item: "SEO"
             },
         ],
-        time: "May 2019 - March 2022"
+        time: "May 2018 - March 2022"
     },
 ] 
 
@@ -552,8 +552,8 @@ const Headdata: workheadobj[] = [
     },
     {
         id: "myraa",
-        Description: "string",
-        Context: "string",
+        Description: "Buitl a product from start to finish at Myraa Technology",
+        Context: "During my time at Myraa Technology, I helped develop a new product from scratch. I started by working on the backend using a framework called Tornado, where I built APIs and connected them to our database. After setting up the backend, I hosted everything on AWS and created databases using MySQL. Throughout the project, I focused on making sure everything ran smoothly and was easy to use. I also worked on improving how the product looked and felt to users. Communication with the team was important, and together we achieved many goals, like setting up servers and adding new features. Overall, I played a key role in making sure our project was successful and could grow in the future.",
         Buttons: [
             {
                 title: "Website",
@@ -578,8 +578,8 @@ const Headdata: workheadobj[] = [
     },
     {
         id: "fascia",
-        Description: "string",
-        Context: "string",
+        Description: "A data analysis application that enables users to analyze various types of data.",
+        Context: "I developed a full-stack application aimed at visualizing diverse datasets. This project served as a learning endeavor during which I adhered to industry standards. Leveraging the MERN stack, we implemented CRUD operations by constructing APIs and deploying the Express server on OnRender. The frontend, crafted with React and Material UI, is hosted on Vercel. Although the current version isn't mobile-compatible due to its complexity, I plan to make it mobile-friendly in the near future.",
         Buttons: [
             {
                 title: "Github",
@@ -593,8 +593,8 @@ const Headdata: workheadobj[] = [
     },
     {
         id: "disstract",
-        Description: "string",
-        Context: "string",
+        Description: "Task Management Chrome Extension",
+        Context: "In college, I participated in a hackathon called HackSRM4.0, where our team aimed to address the issue of online distractions by developing a Chrome extension. This extension facilitated task management by allowing users to create to-do lists and focus on their work, blocking distracting websites once they began their tasks. Our solution also included features such as leaderboards and other essential functionalities. Our team was runner-up in that hackathon.",
         Buttons: [
             {
                 title: "Github",
@@ -604,12 +604,16 @@ const Headdata: workheadobj[] = [
                 title: "Devfolio",
                 link: "https://devfolio.co/projects/disstract-d051"
             },
+            {
+                title: "Blog",
+                link: "https://contactsushil.medium.com/experience-of-participating-in-online-hackathon-c58987dc45ea"
+            },
         ],
     },
     {
         id: "everydukan",
-        Description: "string",
-        Context: "string",
+        Description: "An All-in-One Shopping Application designed to streamline the shopping experience by providing access to multiple online shopping platforms within a single interface.",
+        Context: "Everydukan was conceived as a comprehensive shopping application, offering access to over 21 different shopping platforms within a single interface, thus enabling users to conserve significant storage space on their devices. In our later stages, we aimed to implement a model where users could benefit from our affiliate earnings, akin to the approach employed by platforms like CashKaro. However, unforeseen circumstances arose, leading to the discontinuation of the project. Nonetheless, the application remains available on the Play Store.",
         Buttons: [
             {
                 title: "Playstore",
@@ -620,20 +624,20 @@ const Headdata: workheadobj[] = [
     },
     {
         id: "vpn",
-        Description: "string",
-        Context: "string",
+        Description: "Built a budget-friendly and accessible VPN service application.",
+        Context: "While engaged in various projects, my team and I collaborated to develop a VPN application. We aimed to offer competitive pricing while ensuring reliable VPN access for our users. Some users even opted for our premium plans. To promote our application, we utilized platforms like Quora, Google Ads, and other marketing strategies. However, our journey took an unexpected turn due to policy violations that we were unable to rectify, leading to the suspension of our application.",
         Buttons: [],
     },
     {
         id: "wejobstation",
-        Description: "string",
-        Context: "string",
+        Description: "A unified platform for accessing the latest government job news and educational resources.",
+        Context: "While concurrently building websites and digital presences for clients, I initiated my own venture called WeJobStation. This venture comprised an Android application developed with Kodular and a WordPress website, providing comprehensive access to government job news and educational resources. For monetization, I employed AdSense and affiliate marketing strategies. However, due to intense competition in later stages, I made the decision to discontinue this venture.",
         Buttons: [],
     },
     {
         id: "freelancing",
-        Description: "string",
-        Context: "string",
+        Description: "I was a freelancer primarily collaborating with small and medium-sized businesses to enhance their online presence.",
+        Context: "After gaining valuable experience at Prakash News of India, I recognized the immense potential of establishing an online presence. Motivated by this insight, I began extending my services to assist other small and medium-sized businesses in harnessing the power of the internet. Initially, my focus was on creating WordPress websites, but over time, I diversified my offerings to include Shopify development, SEO, content writing, and digital marketing services. Additionally, I ventured into developing custom basic websites to cater to specific client needs.",
         Buttons: [
             {
                 title: "Email Me",
@@ -643,8 +647,8 @@ const Headdata: workheadobj[] = [
     },
     {
         id: "pni",
-        Description: "string",
-        Context: "string",
+        Description: "In 2018, I had the opportunity to convert a local newspaper into a digital newspaper, and it turned out to be quite successful.",
+        Context: "I assisted the head editor of a local weekly newspaper in India, known as Prakash News, in transitioning their publication into the digital realm. Working within their specified requirements and budget, I developed their news website using the Blogger platform. In addition to building the website, I performed SEO optimization to enhance its visibility on search engines. Furthermore, I provided training to their team to ensure smooth operations. This transformation turned a traditional offline newspaper into a thriving digital publication. As a testament to its success, the website garnered a remarkable traffic of 73,000 visitors in a single day.",
         Buttons: [
             {
                 title: "Website",
