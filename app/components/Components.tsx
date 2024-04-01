@@ -63,10 +63,13 @@ function Twitter() {
 function Description(){
     return (
         <>
-            <h1 className="aboutsh font-serif-variation font-serif text-2xl font-light !leading-tight text-neutral-400 sm:text-3xl lg:text-4xl">Hey there, I’m <span className="blackpp">Sushil</span>👋 Welcome to my corner of the internet 🥹 I have a knack for crafting digital <span className="blackpp">products</span> and currently contribute to the innovative team at <span className="blackpp">Filos</span>.<br/><br/>
-            When Im not delving into pixels and code, you&#39;ll often catch me diving into the vibrant rhythms of Indian hip hop, beats and lyrics.<br/><br/>
-            I&#39;m not a serious <span className="blackpp">writer</span>, but I enjoy dedicating my free time to putting my thoughts into words.</h1><br/><br/>
-        
+           <h1 className="aboutsh font-serif-variation font-serif text-xl font-light !leading-tight text-neutral-400 sm:text-2xl lg:text-3xl">
+    Hey there, I’m <span className="blackpp">Sushil</span>👋 Welcome to my corner of the internet 🥹 I have a knack for crafting digital <span className="blackpp">products</span> and currently contribute to the innovative team at <span className="blackpp">Filos</span>.
+    <br /><br />
+    When I'm not delving into pixels and code, you'll often catch me diving into the vibrant rhythms of Indian hip hop, beats, and lyrics.
+    <br /><br />
+    I'm not a serious <span className="blackpp">writer</span>, but I enjoy dedicating my free time to putting my thoughts into words.
+</h1>
         </>
     )
 }
