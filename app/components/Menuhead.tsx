@@ -23,7 +23,7 @@ const Menuitems: React.FC<MenuProps> = ({ Title }) => {
         if(item==Title){
         return (
             <>
-            <Link href={"/"+item}>
+            <Link href={"/"+item.toLowerCase()}>
             <div className="menuopt">
                 <center><p className="smit">{item}</p></center>
             </div>
@@ -45,7 +45,7 @@ const Menuitems: React.FC<MenuProps> = ({ Title }) => {
         else{
             return (
                 <>
-                <Link href={"/"+item}>
+                <Link href={"/"+item.toLowerCase()}>
                 <div className="menuopt">
                     <center><p className="mit">{item}</p></center>
                 </div>

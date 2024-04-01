@@ -64,7 +64,7 @@ function Description(){
     return (
         <>
            <h1 className="aboutsh font-serif-variation font-serif text-xl font-light !leading-tight text-neutral-400 sm:text-2xl lg:text-3xl">
-    Hey there, I’m <span className="blackpp">Sushil</span>👋 Welcome to my corner of the internet 🥹 I have a knack for crafting digital <span className="blackpp">products</span> and currently contribute to the innovative team at <span className="blackpp">Filos</span>.
+    Hey there, I’m <span className="blackpp">Sushil</span>👋 Welcome to my corner of the internet 🥹 As a <span className="blackpp">full stack developer</span> with a knack for crafting digital products and currently contribute to the innovative team at <span className="blackpp">Filos</span>.
     <br /><br />
     When I'm not delving into pixels and code, you'll often catch me diving into the vibrant rhythms of Indian hip hop, beats, and lyrics.
     <br /><br />
@@ -89,7 +89,7 @@ function Gallery() {
                 Side="IHH Player"
             />
                 </div>
-                <Image src={Varansi} alt="" className={`rounded-md h-80 transition-transform duration-500 transform ${hovered ? 'translate-y-10' : 'translate-y-0'}`} />
+                <img src={"http://res.cloudinary.com/djug8zfu7/image/upload/v1711889398/y3kfkssreqfflen219wy.png"} alt="" className={`rounded-md h-80 transition-transform duration-500 transform ${hovered ? 'translate-y-10' : 'translate-y-0'}`} />
             </div>
         </div>
     );

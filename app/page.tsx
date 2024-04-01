@@ -5,45 +5,7 @@ import Menuhead from "./components/Menuhead";
 import { Blogcard } from "./components/Propcomp";
 import { CardStack } from "./components/card-stack";
 
-const sampleData: Array<{
-  id: number;
-  name: string;
-  designation: string;
-  content: React.ReactNode;
-}> = [
-  {
-    id: 1,
-    name: 'John Doe',
-    designation: 'Software Engineer',
-    content: (
-      <div>
-        <p>This is John Doe's content.</p>
-      </div>
-    ),
-  },
-  {
-    id: 2,
-    name: 'Jane Smith',
-    designation: 'UI/UX Designer',
-    content: "HEY THERE",
-  },
-  // Add more sample data as needed
-];
-
-const ab = () => {
-  return (
-    <div className="cardstest">
-      <CardStack
-      items={sampleData}
-      />
-    </div>
-  )
-}
-
 export default function Home() {
-  //MENU
-  //ABOUT SECTION
-  //THREE SECTIONS ONE ABOUT GALLERY ONE ABOUT FASCIA ONE ABOUT BLOG
   return (
     <>
     <div className="m-10 mt-1">
@@ -52,10 +14,10 @@ export default function Home() {
     Title="Sushil"
     />
     <About/>
-    <div className="lg:flex flex-row h-auto justify-items-center content-start">
-      <div className="basis-1/4 m-1"><Gallery/></div>
-      <div className="basis-1/2 m-1"><FasciaComp/></div>
-      <div className="basis-1/4 m-1">
+    <div className="grid grid-cols-3 gap-4 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <div className="m-1"><Gallery/></div>
+      <div className="m-1"><FasciaComp/></div>
+      <div className="m-1">
         <Blogcard 
         key="SOLANA"
         Title="Online Hackathon Experience"

@@ -706,4 +706,63 @@ const Workbody: workbodybj[] = [
     },
 ]
 
-export {projects, Workdata, Headdata, Workbody}
+interface artobj{
+        id: string;
+        name: string;
+        sub: string;
+        img: string;
+
+}
+
+const Articles: artobj[] = [
+    {
+        id: "https://contactsushil.medium.com/full-stack-development-intern-experience-e5bf1a3625bb",
+        name: "Full Stack Development Intern Experience",
+        sub: "Published on Apr 1, 2024",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711975778/hriztvprtxiunhbvtprf.png"
+    },
+    {
+        id: "https://contactsushil.medium.com/exploring-enigmas-varanasi-unveiled-dae0e30293fb",
+        name: "Exploring Enigmas: Varanasi Unveiled",
+        sub: "Published on Mar 16, 2024",
+        img: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*OJHlK-XvFJPAn-vR.jpg"
+    },
+    {
+        id: "https://contactsushil.medium.com/you-need-a-doctor-d5da77770537",
+        name: "You need a doctor!!!!",
+        sub: "Published on Feb 4, 2024",
+        img: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*SQ4AVFjfl7cq5qHO"
+    },
+    {
+        id: "https://contactsushil.medium.com/planning-though-ad77f91711b1",
+        name: "Planning Though",
+        sub: "Published on Dec 31, 2023",
+        img: "https://miro.medium.com/v2/resize:fit:1252/format:webp/0*xNRUYGojVF4UFBPT"
+    },
+    {
+        id: "https://contactsushil.medium.com/what-is-huffman-compression-3b4d22b61f11",
+        name: "What is Huffman Text Compression?",
+        sub: "Published on Sep 2, 2023",
+        img: "https://miro.medium.com/v2/resize:fit:2000/format:webp/0*zzbKBY7Qe8eqwif1.jpg"
+    },
+    {
+        id: "https://contactsushil.medium.com/experience-of-participating-in-online-hackathon-c58987dc45ea",
+        name: "Experience of Participating in Online Hackathon",
+        sub: "Published on July 24, 2023",
+        img: "http://res.cloudinary.com/djug8zfu7/image/upload/v1711975848/itiqevzyl6dup8wwkqtj.webp"
+    },
+    {
+        id: "https://contactsushil.medium.com/building-my-first-chrome-extension-8b97594494ec",
+        name: "Building My First Chrome Extension",
+        sub: "Published on May 12, 2023",
+        img: "https://quixy.com/wp-content/uploads/2022/09/Chrome-extensions-for-productivity.png"
+    },
+    {
+        id: "https://contactsushil.medium.com/how-to-make-a-gesture-based-intelligent-appliance-control-robot-75e26eee8b10",
+        name: "How to Make a Gesture Based Intelligent Appliance Control Robot",
+        sub: "Published on Apr 5, 2023",
+        img: "https://miro.medium.com/v2/resize:fill:224:224/1*ZsT0Gzfertftg-SPEEQoxQ.jpeg"
+    }
+]
+
+export {projects, Workdata, Headdata, Workbody, Articles}
