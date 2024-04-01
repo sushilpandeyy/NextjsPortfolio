@@ -755,13 +755,13 @@ const Articles: artobj[] = [
         id: "https://contactsushil.medium.com/building-my-first-chrome-extension-8b97594494ec",
         name: "Building My First Chrome Extension",
         sub: "Published on May 12, 2023",
-        img: "https://quixy.com/wp-content/uploads/2022/09/Chrome-extensions-for-productivity.png"
+        img: "https://imgeng.jagran.com/images/2023/apr/google-chrome-extensions1681045814261.jpg"
     },
     {
         id: "https://contactsushil.medium.com/how-to-make-a-gesture-based-intelligent-appliance-control-robot-75e26eee8b10",
         name: "How to Make a Gesture Based Intelligent Appliance Control Robot",
         sub: "Published on Apr 5, 2023",
-        img: "https://miro.medium.com/v2/resize:fill:224:224/1*ZsT0Gzfertftg-SPEEQoxQ.jpeg"
+        img: "https://img-c.udemycdn.com/course/480x270/4503190_0ad9_2.jpg"
     }
 ]
 
