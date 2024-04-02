@@ -4,8 +4,20 @@ import { Gallery, FasciaComp, Techstack } from "./components/Components";
 import Menuhead from "./components/Menuhead";
 import { Blogcard } from "./components/Propcomp";
 import { CardStack } from "./components/card-stack";
+import axios from "axios"
+
+async function fetchData() {
+  try {
+    const response = await axios.get('https://fascia-backend.onrender.com/client/geography');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
 
 export default function Home() {
+  fetchData();
   return (
     <>
     <div className="m-10 mt-1">
