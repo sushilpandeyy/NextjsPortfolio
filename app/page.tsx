@@ -1,6 +1,6 @@
 "use client";
 import About from "./components/About";
-import { Gallery, FasciaComp } from "./components/Components";
+import { Gallery, FasciaComp, Techstack } from "./components/Components";
 import Menuhead from "./components/Menuhead";
 import { Blogcard } from "./components/Propcomp";
 import { CardStack } from "./components/card-stack";
@@ -14,7 +14,7 @@ export default function Home() {
     Title="Sushil"
     />
     <About/>
-    <div className="grid grid-cols-3 gap-4 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+    <div className="grid grid-cols-3 gap-4 sm:grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mt-5 mb-5">
       <div className="m-1"><Gallery/></div>
       <div className="m-1"><FasciaComp/></div>
       <div className="m-1">
@@ -27,6 +27,7 @@ export default function Home() {
         />
         </div>
     </div>
+     <Techstack/>
     </div>
     </>
   );

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Varansi from "../../assets/Varansi.jpg"
 import Folder from "../../assets/Folder.jpeg"
+import Skoop from "../../assets/Skoop.png"
 
 function Twitter2(){
  return (
@@ -83,10 +84,10 @@ function Gallery() {
                 <div className={`absolute top-0 left-0 w-full transition-opacity duration-500 ${hovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <Minimenu 
                 key="VARANSIARTI"
-                Title="Projects"
-                URL="/projects"
-                Pro="https://ihh-player.vercel.app"
-                Side="IHH Player"
+                Title="Internship"
+                URL="/work"
+                Pro="/work/myraa"
+                Side="Full Stack Intern"
             />
                 </div>
                 <img src={"http://res.cloudinary.com/djug8zfu7/image/upload/v1711889398/y3kfkssreqfflen219wy.png"} alt="" className={`rounded-md h-80 transition-transform duration-500 transform ${hovered ? 'translate-y-10' : 'translate-y-0'}`} />
@@ -99,14 +100,14 @@ function IhhComp() {
     return (
         <div className="group w-full overflow-hidden rounded-lg bg-neutral-100 transition-colors focus-within:bg-neutral-300 hover:bg-neutral-300 flex-col">
             <Minimenu 
-                key="IHHPLAy"
-                Title="Projects"
-                URL="/projects"
+                key="SKOOPPROJ"
+                Title="Project"
+                URL="/work"
                 Pro="https://ihh-player.vercel.app"
-                Side="IHH Player"
+                Side="Skoop"
             />
             <div className="boxdlee grow overflow-hidden transition-colors focus-within:bg-neutral-300 hover:bg-neutral-300 ">
-                <img className="imageihh" src="https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png" alt="IHH Player"/>
+                <Image className="imageihh" src={Skoop} alt="IHH Player"/>
             </div>
         </div>
     );
@@ -118,18 +119,27 @@ function FasciaComp() {
     return (
         <div className="group h-80 w-full overflow-hidden rounded-lg bg-neutral-100 transition-colors focus-within:bg-neutral-300 hover:bg-neutral-300 " onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
             <Minimenu 
-                key="FASCIA"
-                Title="Projects"
-                URL="/projects"
-                Pro="https://ihh-player.vercel.app"
+                key="IHHPlayerFront"
+                Title="Project"
+                URL="/work"
+                Pro="https://ihh.contactsushil.me"
                 Side="IHH Player"
             />
             <div className={`relative overflow-hidden transition-transform px-2 duration-500 ${hovered ? '' : 'translate-y-6'}`} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-                <img src="https://camo.githubusercontent.com/f1e17d3bd0b19438a0c6a68182006984dda52089ce0f0592eaabc4f74feae236/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646a7567387a6675372f696d6167652f75706c6f61642f665f6175746f2c715f6175746f2f757a6f767671396173396f327a65736d34767a71" alt="IHH Player" style={{ position: 'relative', top: hovered ? '10px' : '30px' }} />
+                <img src="https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png" alt="IHH Player" style={{ position: 'relative', top: hovered ? '10px' : '30px' }} />
             </div>
         </div>
     );
 }
 
+function Techstack(){
+  return(
+    <>
+    <div className="mt-2 md-2 ">
+      dd
+    </div>
+    </>
+  )
+}
 
-export {Twitter, Twitter2, Gallery, Description, IhhComp, FasciaComp}
+export {Twitter, Twitter2, Gallery, Description, IhhComp, FasciaComp, Techstack}

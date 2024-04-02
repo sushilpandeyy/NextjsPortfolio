@@ -556,8 +556,8 @@ const Headdata: workheadobj[] = [
         Context: "During my time at Myraa Technology, I helped develop a new product from scratch. I started by working on the backend using a framework called Tornado, where I built APIs and connected them to our database. After setting up the backend, I hosted everything on AWS and created databases using MySQL. Throughout the project, I focused on making sure everything ran smoothly and was easy to use. I also worked on improving how the product looked and felt to users. Communication with the team was important, and together we achieved many goals, like setting up servers and adding new features. Overall, I played a key role in making sure our project was successful and could grow in the future.",
         Buttons: [
             {
-                title: "Website",
-                link: "https://www.myraatechnologies.com/"
+                title: "Case Study",
+                link: "https://contactsushil.medium.com/full-stack-development-intern-experience-e5bf1a3625bb"
             },
         ],
     },

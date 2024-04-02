@@ -37,11 +37,11 @@ const Blogcard: React.FC<BlogProps> = ({Title, URL, Description, Date}) => {
         <>
         <div className="rounded-md p-3 h-full rounded-lg bg-neutral-100 transition-colors  focus-within:bg-neutral-300 hover:bg-neutral-300 ">
         <Minimenu 
-                key="FASCIA"
-                Title="Projects"
-                URL="/projects"
-                Pro="https://ihh-player.vercel.app"
-                Side="IHH Player"
+                key="BLOG"
+                Title="Articles"
+                URL="/article"
+                Pro="https://contactsushil.medium.com/experience-of-participating-in-online-hackathon-c58987dc45ea"
+                Side=""
             />
         <div className='flex flex-col h-4/5 content-end justify-end mt-10'>    
         <h2 className='text-xl fblog'>{Title}</h2>
