@@ -17,7 +17,7 @@ async function fetchData() {
 
 
 export default function Home() {
-  fetchData();
+//  fetchData();
   return (
     <>
     <div className="m-10 mt-1">
